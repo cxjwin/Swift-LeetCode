@@ -22,37 +22,13 @@ class TreeTests: XCTestCase {
     func testBuildTree() {
         let arr = [3, 2, 3, nil, 3, nil, 1]
         if let root = TreeNode.buildTree(arr) {
-            var res = true
-            if root.val == 3 {
-                if let left = root.left {
-                    if left.val == 2 {
-                        if let right = left.right {
-                            if right.val != 3 {
-                                res = false
-                            }
-                        }
-                    } else {
-                        res = false
-                    }
-                } else {
-                    res = false
-                }
-                
-                if let right = root.right {
-                    if right.val == 3 {
-                        if let right = right.right {
-                            if right.val != 1 {
-                                res = false
-                            }
-                        }
-                    } else {
-                        res = false
-                    }
-                }
-            } else {
-                res = false
+            if root.val != 3 ||
+                root.left!.val != 2 ||
+                root.right!.val != 3 ||
+                root.left!.right!.val != 3 ||
+                root.right!.right!.val != 1 {
+                    XCTAssert(false, "leaf is error")
             }
-            XCTAssert(res, "leaf is error")
         } else {
             XCTAssert(false, "fail to create tree")
         }
