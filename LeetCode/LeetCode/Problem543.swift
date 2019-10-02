@@ -6,13 +6,8 @@
 //  Copyright © 2019 smart. All rights reserved.
 //
 
-import Foundation
-
-public class Problem543 {
-    public init() {
-        //
-    }
-
+public class Problem543 : Problem {
+    
     private func maxDepth(_ root: TreeNode?, _ d: UnsafeMutablePointer<Int>) -> Int {
         guard let root = root else { return 0 }
         
