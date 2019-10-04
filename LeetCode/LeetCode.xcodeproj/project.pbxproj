@@ -16,6 +16,10 @@
 		2A5B839F2343AA51004D9389 /* Problem322.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B839E2343AA51004D9389 /* Problem322.swift */; };
 		2A5B83A12343AAA2004D9389 /* Problem322Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B83A02343AAA2004D9389 /* Problem322Tests.swift */; };
 		2A82BBE1234494AF00F0D932 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82BBE0234494AF00F0D932 /* Problem.swift */; };
+		2ABB864E2344D1B2004C8DFC /* Problem62.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB864D2344D1B2004C8DFC /* Problem62.swift */; };
+		2ABFF4962344DFD100D63ED8 /* Problem62Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */; };
+		2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4972344E62100D63ED8 /* Problem55.swift */; };
+		2ABFF49A2344EAFD00D63ED8 /* Problem55Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4992344EAFD00D63ED8 /* Problem55Tests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +45,10 @@
 		2A5B839E2343AA51004D9389 /* Problem322.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem322.swift; sourceTree = "<group>"; };
 		2A5B83A02343AAA2004D9389 /* Problem322Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem322Tests.swift; sourceTree = "<group>"; };
 		2A82BBE0234494AF00F0D932 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		2ABB864D2344D1B2004C8DFC /* Problem62.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62.swift; sourceTree = "<group>"; };
+		2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62Tests.swift; sourceTree = "<group>"; };
+		2ABFF4972344E62100D63ED8 /* Problem55.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem55.swift; sourceTree = "<group>"; };
+		2ABFF4992344EAFD00D63ED8 /* Problem55Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem55Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,8 @@
 			isa = PBXGroup;
 			children = (
 				2A5B5FFE22F5DE7600A1BF09 /* Info.plist */,
+				2ABFF4992344EAFD00D63ED8 /* Problem55Tests.swift */,
+				2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */,
 				2A5B83A02343AAA2004D9389 /* Problem322Tests.swift */,
 				2A5B601022F708AF00A1BF09 /* Problem543Tests.swift */,
 				2A5B600E22F5E0A400A1BF09 /* TreeTests.swift */,
@@ -106,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				2A82BBE0234494AF00F0D932 /* Problem.swift */,
+				2ABFF4972344E62100D63ED8 /* Problem55.swift */,
+				2ABB864D2344D1B2004C8DFC /* Problem62.swift */,
 				2A5B839E2343AA51004D9389 /* Problem322.swift */,
 				2A5B600822F5DE9E00A1BF09 /* Problem543.swift */,
 			);
@@ -233,7 +245,9 @@
 				2A5B600922F5DE9E00A1BF09 /* Problem543.swift in Sources */,
 				2A82BBE1234494AF00F0D932 /* Problem.swift in Sources */,
 				2A5B600D22F5DF0600A1BF09 /* Tree.swift in Sources */,
+				2ABB864E2344D1B2004C8DFC /* Problem62.swift in Sources */,
 				2A5B839F2343AA51004D9389 /* Problem322.swift in Sources */,
+				2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,9 +255,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ABFF49A2344EAFD00D63ED8 /* Problem55Tests.swift in Sources */,
 				2A5B601122F708AF00A1BF09 /* Problem543Tests.swift in Sources */,
 				2A5B600F22F5E0A400A1BF09 /* TreeTests.swift in Sources */,
 				2A5B83A12343AAA2004D9389 /* Problem322Tests.swift in Sources */,
+				2ABFF4962344DFD100D63ED8 /* Problem62Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
