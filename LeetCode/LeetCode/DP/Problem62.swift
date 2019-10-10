@@ -9,11 +9,11 @@
 public class Problem62 : Problem {
     
     public func uniquePaths(_ m: Int, _ n: Int) -> Int {
-        var res = [[Int]]()
-        for _ in 0..<m {
-            let arr = [Int](repeating: 0, count: n)
-            res.append(arr)
+        if m == 0 || n == 0 {
+            return 0
         }
+        
+        var res = [[Int]](repeating: [Int](repeating: 0, count: n), count: m)
         
         for i in 0..<m {
             for j in 0..<n {

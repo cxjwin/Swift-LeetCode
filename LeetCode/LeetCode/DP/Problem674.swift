@@ -8,11 +8,11 @@
 
 public class Problem674: Problem {
     public func findLengthOfLCIS(_ nums: [Int]) -> Int {
-        if nums.count == 0 {
+        let n = nums.count
+        if n == 0 {
             return 0
         }
         
-        let n = nums.count
         var pre = 1
         var cur = pre
         

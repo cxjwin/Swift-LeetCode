@@ -9,10 +9,11 @@
 public class Problem322 : Problem {
     
     public func coinChange(_ coins: [Int], _ amount: Int) -> Int {
-        var res = [Int](repeating: Int.max, count: amount+1)
-        res[0] = 0
+        var res = [Int](repeating: 0, count: amount+1)
+        
         if amount > 0 {
             for i in 1...amount {
+                res[i] = Int.max
                 for coin in coins {
                     if i >= coin && res[i-coin] != Int.max {
                         res[i] = min(res[i], res[i-coin] + 1)

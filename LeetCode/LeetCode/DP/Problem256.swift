@@ -8,12 +8,10 @@
 
 public class Problem256: Problem {
     public func minCost(_ costs: [[Int]]) -> Int {
-        
-        if costs.count == 0 {
+        let n = costs.count
+        if n == 0 {
             return 0
         }
-        
-        let n = costs.count
         
         var d = [[Int]](repeating: [Int](repeating: 0, count: 3), count: n+1)
         for i in 0..<3 {

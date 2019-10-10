@@ -9,25 +9,25 @@
 public class Problem63: Problem {
     public func uniquePathsWithObstacles(_ obstacleGrid: [[Int]]) -> Int {
         
-        if obstacleGrid.count == 0 || obstacleGrid.first?.count == 0 {
+        if obstacleGrid.count == 0 || obstacleGrid[0].count == 0 {
             return 0
         }
         
         let m = obstacleGrid.count
-        let n = obstacleGrid.first!.count
+        let n = obstacleGrid[0].count
         
-        var d = [[Int]]()
-        for _ in obstacleGrid {
-            d.append([Int](repeating: 0, count: n))
-        }
+        var d = [[Int]](repeating: [Int](repeating: 0, count: n), count: m)
+
+        // init
         d[0][0] = obstacleGrid[0][0] == 1 ? 0 : 1
-        
         for i in 1..<m {
             d[i][0] = obstacleGrid[i][0] == 1 ? 0 : d[i-1][0]
         }
         for j in 1..<n {
             d[0][j] = obstacleGrid[0][j] == 1 ? 0 : d[0][j-1]
         }
+        
+        // dp
         for i in 1..<m {
             for j in 1..<n {
                 if obstacleGrid[i][j] == 1 {
