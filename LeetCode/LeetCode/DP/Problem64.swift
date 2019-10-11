@@ -10,7 +10,7 @@
 
 public class Problem64: Problem {
     public func minPathSum(_ grid: [[Int]]) -> Int {
-        if grid.count == 0 || grid[0].count == 0{
+        if grid.count == 0 || grid[0].count == 0 {
             return 0
         }
         

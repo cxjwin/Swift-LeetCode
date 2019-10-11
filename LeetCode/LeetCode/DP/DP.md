@@ -67,15 +67,44 @@ answer: f[m - 1][n - 1]
 
 1.3 Jump Game
 
-state: f[x] 表示从起点到x的是否能够跳到
+state: f[i] 表示从起点到位置i是否能够跳到
 
 function: 
+```
+for i in 1..<n {
+    for j in 0..<i {
+        if f[j] && j + nums[j] >= i {
+            f[i] = true
+            break;
+        }
+    }
+}
+```
 
-initialize: 
+initialize: f[0] = true
 
-answer: 
+answer: f[n-1]
 
 1.4 Jump Game 2
+
+state: f[i] 表示从起点到位置i需要的最小跳数
+
+function: 
+```
+for i in 1..<n {
+    f[i] = Int.max
+    for j in 0..<i {
+        if f[j] != Int.max && j + nums[j] >= i {
+            f[i] = f[j] + 1
+            break;
+        }
+    }
+}
+```
+
+initialize: f[0] = 0
+
+answer: f[n-1]
 
 1.5 Longest Increasing Subsequence
 

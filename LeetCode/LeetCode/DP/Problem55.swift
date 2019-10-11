@@ -27,4 +27,21 @@ public class Problem55: Problem {
         
         return f[n-1]
     }
+    
+    public func canJumpGreedy(_ nums: [Int]) -> Bool {
+        let n = nums.count
+        if n == 0 {
+            return false
+        }
+        
+        var farthest = nums[0]
+        
+        for i in 1..<n {
+            if i <= farthest && nums[i] + i > farthest {
+                farthest = nums[i] + i
+            }
+        }
+        
+        return farthest >= n - 1
+    }
 }
