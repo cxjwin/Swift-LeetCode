@@ -26,12 +26,24 @@ class Problem55Tests: XCTestCase {
         // Input: [2,3,1,1,4]
         // Output: true
         let res = p.canJump([2,3,1,1,4])
-        XCTAssert(res == true, "Output: true")
+        XCTAssert(res == true, "1 -> Output: true")
         
         // Input: [3,2,1,0,4]
         // Output: false
         let res2 = p.canJump([3,2,1,0,4])
-        XCTAssert(res2 == false, "Output: false")
+        XCTAssert(res2 == false, "2 -> Output: false")
+    }
+    
+    func testCanJumpGreedy() {
+        // Input: [2,3,1,1,4]
+        // Output: true
+        let res = p.canJumpGreedy([2,3,1,1,4])
+        XCTAssert(res == true, "1 -> Output: true")
+        
+        // Input: [3,2,1,0,4]
+        // Output: false
+        let res2 = p.canJumpGreedy([3,2,1,0,4])
+        XCTAssert(res2 == false, "2 -> Output: false")
     }
 
 }

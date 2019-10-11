@@ -7,9 +7,11 @@
 //
 
 import XCTest
+import LeetCode
 
 class Problem45Tests: XCTestCase {
-
+    let p = Problem45()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -18,16 +20,18 @@ class Problem45Tests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testJump() {
+        // Input: [2,3,1,1,4]
+        // Output: 2
+        let res = p.jump([2,3,1,1,4])
+        XCTAssert(res == 2, "1 -> Output: 2")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testJumpGreedy() {
+        // Input: [2,3,1,1,4]
+        // Output: 2
+        let res = p.jumpGreedy([2,3,1,1,4])
+        XCTAssert(res == 2, "1 -> Output: 2")
     }
 
 }
