@@ -1,3 +1,5 @@
+# DP
+
 前前后后看了好几次的动态规划, 每次看过就忘了, 所以这次打算系统的记录下笔记, 也好便于以后回顾.
 这里看到一篇总结的很好的博客, 虽然浏览量不是很多, 不过个人觉的真的很好.
 
@@ -7,11 +9,13 @@
 避免中间重复的计算结果
 
 什么时候使用动态规划:
+
 1. 求最大/最小值
 2. 判断是否可行
 3. 统计方案个数
 
 什么时候不用动态规划:
+
 1. 求出所有具体的方案而非方案个数
 2. 输入数据是一个集合而不是序列
 3. 暴力算法的复杂度已经是多项式级别
@@ -27,7 +31,7 @@
 
 常见的动态规划类型:
 
-1. 坐标型动态规划
+## 1. 坐标型动态规划
 
 state:
 f[i] 表示从起点走到坐标i...
@@ -57,9 +61,9 @@ answer: f[m - 1][n - 1]
 
 1.2 Unique Paths
 
-state: f[x][y] 表示从起点到(x,y)的路径数
+state: f[i][j] 表示从起点到(i,j)的路径数
 
-function: f[x][y] = f[x - 1][y] + f[x][y - 1]
+function: f[i][j] = f[i - 1][j] + f[i][j - 1]
 
 initialize: f[0][i] = 1; f[i][0] = 1;
 
@@ -69,8 +73,9 @@ answer: f[m - 1][n - 1]
 
 state: f[i] 表示从起点到位置i是否能够跳到
 
-function: 
-```
+function:
+
+```swift
 for i in 1..<n {
     for j in 0..<i {
         if f[j] && j + nums[j] >= i {
@@ -89,8 +94,9 @@ answer: f[n-1]
 
 state: f[i] 表示从起点到位置i需要的最小跳数
 
-function: 
-```
+function:
+
+```swift
 for i in 1..<n {
     f[i] = Int.max
     for j in 0..<i {
@@ -108,9 +114,27 @@ answer: f[n-1]
 
 1.5 Longest Increasing Subsequence
 
+state: f[i] 表示从起点到位置i最长递增子序列长度
+
+function:
+
+```swift
+for i in 1..<n {
+    if nums[i] > nums[i-1] {
+        f[i] = f[i-1] + 1
+    } else {
+        f[i] = f[i-1]
+    }
+}
+```
+
+initialize: f[0] = 1 // 它自己
+
+answer: f[n-1]
+
 1.6 Maximal Square
 
-2. 序列型动态规划
+## 2. 序列型动态规划
 
 state: f[i]表示**前i**个位置／数字／字符, 第i个...
 
@@ -174,7 +198,7 @@ dp[i]: 表示组成面值i所需的最小的coin个数.
 
 2.8 Integer break
 
-3. 双序列动态规划
+## 3. 双序列动态规划
 
 state: f[i][j]代表了第一个sequence的前i个数字／字符, 配上第二个sequence的前j个...
 
@@ -239,5 +263,4 @@ initialize: f[i][0] = 1; // 当目标为空串时, 无论source的长度是多�
 
 answer: f[m][n]
 
-4. 划分型动态规划
-
+## 4. 划分型动态规划
