@@ -181,6 +181,22 @@ answer: f[n]...
 
 2.1 word break 
 
+state: f[i]表示前i个字符是否可以 Word Break
+
+function:
+
+```swift
+for i in 1..<n {
+    for j in 0..<i {
+        
+    }
+}
+```
+
+initialize: f[0] = true
+
+answer: f[n]
+
 2.2 word break ii
 
 2.3 House Robber
