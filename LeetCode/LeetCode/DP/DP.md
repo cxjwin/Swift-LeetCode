@@ -294,16 +294,34 @@ initialize: f[i][0] = i; f[0][j] = j;
 
 answer: f[m][n]
 
+3.3 Interleaving String
+
+state: f[i][j] 表示a的前i个字符和b的前j个字符能否交替组成s3的前i ＋ j个字符
+
+function:  
+if ((f[i - 1][j] && a.charAt(i - 1) == s3.charAt(i + j - 1)) || 
+    (f[i][j - 1] && b.charAt(j - 1) == s3.charAt(i + j - 1))) {
+    f[i][j] = true;
+} else {
+    f[i][j] = false;
+}
+
+initialize: 
+f[i][0] = f[i-1][0] && a[i-1] == s3[i-1]; 
+f[0][j] = f[0][j] && b[j-1] == s3[i-1];
+
+answer: f[m][n]
+
 3.4 Distinct Subsequence
 
 state: f[i][j]表示s的前i个字符中选取t的前j个字符 有多少种方案
 
 function:
-        if (a[i - 1] == b [j - 1]) {
-            dp[i][j] = dp[i - 1][j - 1] ＋ dp[i][j - 1];
-　　　　　} else {
-            dp[i][j] = dp[i - 1][j];
-　　　　　}
+if (a[i - 1] == b [j - 1]) {
+    dp[i][j] = dp[i - 1][j - 1] ＋ dp[i][j - 1];
+} else {
+    dp[i][j] = dp[i - 1][j];
+}
 
 initialize: f[i][0] = 1; // 当目标为空串时, 无论source的长度是多少都认为是1个
 　　　　　　　f[0][j] = 0; // (j > 0) 当两个都为空串的时候，认为是1
