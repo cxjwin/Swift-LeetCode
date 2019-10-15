@@ -329,3 +329,23 @@ initialize: f[i][0] = 1; // 当目标为空串时, 无论source的长度是多�
 answer: f[m][n]
 
 ## 4. 划分型动态规划
+
+在一个大的区间内找一个小的区间.
+划分类的题目, 基本思路都是用一个local数组和一个gobal数组, 然后进行遍历.
+之所以可以用变量来代替数组, 是因为做了滚动数组的优化!
+
+4.1 Maximum Subarray
+
+在一个数组里找一个连续的部分， 使得累加和最大
+
+state:  local[i] 表示包括第i个元素能找到的最大值
+        gobal[i] 表示全局前i个元素中能找到的最大值
+
+function:
+        local[i] = max(local[i - 1] + nums[i], nums[i]);
+        gobal[i] = max(gobal[i - 1], local[i]);
+
+initialization:
+        local[0] = gobal[0] = nums[0];
+
+answer: gobal[size - 1];
