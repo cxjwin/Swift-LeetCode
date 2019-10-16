@@ -314,17 +314,20 @@ answer: f[m][n]
 
 3.4 Distinct Subsequence
 
-state: f[i][j]表示s的前i个字符中选取t的前j个字符 有多少种方案
+state: f[i][j]表示s的前i个字符中选取t的前j个字符有多少种方案
 
 function:
-if (a[i - 1] == b [j - 1]) {
+if (s[i - 1] == t[j - 1]) {
     dp[i][j] = dp[i - 1][j - 1] ＋ dp[i][j - 1];
 } else {
     dp[i][j] = dp[i - 1][j];
 }
 
-initialize: f[i][0] = 1; // 当目标为空串时, 无论source的长度是多少都认为是1个
-　　　　　　　f[0][j] = 0; // (j > 0) 当两个都为空串的时候，认为是1
+initialize:
+m = s.count
+n = t.count
+f[i][0] = 1; // 当目标为空串时, 无论source的长度是多少都认为是1个
+f[0][j] = 0; // (j > 0) 当两个都为空串的时候, 认为是1
 
 answer: f[m][n]
 
@@ -332,9 +335,9 @@ answer: f[m][n]
 
 在一个大的区间内找一个小的区间.
 划分类的题目, 基本思路都是用一个local数组和一个gobal数组, 然后进行遍历.
-之所以可以用变量来代替数组, 是因为做了滚动数组的优化!
+之所以可以用变量来代替数组, 是因为做了**滚动数组**的优化!
 
-4.1 Maximum Subarray
+### 4.1 Maximum Subarray
 
 在一个数组里找一个连续的部分， 使得累加和最大
 
@@ -349,3 +352,17 @@ initialization:
         local[0] = gobal[0] = nums[0];
 
 answer: gobal[size - 1];
+
+### 4.2 Maximum Product Subarray
+
+这道题跟 Maximum Subarray 模型上和思路上都比较类似, 还是用一维动态规划中的"局部最优和全局最优法". 这里的区别是维护一个局部最优不足以求得后面的全局最优, 这是由于乘法的性质不像加法那样, 累加结果只要是正的一定是递增, 乘法中有可能现在看起来小的一个负数. 后面跟另一个负数相乘就会得到最大的乘积. 不过事实上也没有麻烦很多, 我们只需要在维护一个局部最大的同时, 在维护一个局部最小, 这样如果下一个元素遇到负数时, 就有可能与这个最小相乘得到当前最大的乘积和, 这也是利用乘法的性质得到的.
+
+维护了最大最小2个数组!
+state:
+    min[i] 表示前i个数包括第i个数找到的最小乘积
+    max[i] 表示前i个数包括第i个数找到的最大乘积
+function:
+    min[i] = Min(nums[i], Min(min[i - 1]) * nums[i], max[i - 1] * nums[i]) 
+    区分nums[i]正负！！
+    max[i] = max(max[i], Max(min[i - 1]) * nums[i], max[i - 1] * nums[i])
+
