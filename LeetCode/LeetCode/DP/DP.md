@@ -362,7 +362,14 @@ state:
     min[i] 表示前i个数包括第i个数找到的最小乘积
     max[i] 表示前i个数包括第i个数找到的最大乘积
 function:
-    min[i] = Min(nums[i], Min(min[i - 1]) * nums[i], max[i - 1] * nums[i]) 
-    区分nums[i]正负！！
-    max[i] = max(max[i], Max(min[i - 1]) * nums[i], max[i - 1] * nums[i])
+    min[i] = min(nums[i], min(min[i - 1]) * nums[i], max[i - 1] * nums[i]) 
+    区分nums[i]正负!!!
+    max[i] = max(max[i], max(min[i - 1]) * nums[i], max[i - 1] * nums[i])
 
+### 4.3 Best Time to Buy and Sell Stock
+
+### 4.4 Best Time to Buy and Sell Stock II
+
+### 4.5 Best Time to Buy and Sell Stock III
+
+对于2次的题目,一定要想到从左到右和从右到左2次!!!
