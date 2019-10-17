@@ -7,9 +7,12 @@
 //
 
 import XCTest
+import LeetCode
 
 class Problem188Tests: XCTestCase {
 
+    let p = Problem188()
+    
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -19,15 +22,15 @@ class Problem188Tests: XCTestCase {
     }
 
     func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        // Input: [2,4,1], k = 2
+        // Output: 2
+        let res = p.maxProfit(2, [2,4,1])
+        XCTAssert(res == 2, "1 -> Output: 2")
+        
+        // Input: [3,2,6,5,0,3], k = 2
+        // Output: 7
+        let res2 = p.maxProfit(2, [3,2,6,5,0,3])
+        XCTAssert(res2 == 7, "2 -> Output: 7")
     }
 
 }
