@@ -370,8 +370,32 @@ function:
 
 ### 4.4 Best Time to Buy and Sell Stock II
 
+对于2次的题目,一定要想到从左到右和从右到左2次!!!
+
 ### 4.5 Best Time to Buy and Sell Stock III
 
 ### 4.6 Best Time to Buy and Sell Stock IV
 
-对于2次的题目,一定要想到从左到右和从右到左2次!!!
+### 4.7 Maximum Subarray II
+需要找2段subarray的和
+思路: 
+对于两次划分的问题, 1. 从左到右 2. 从右到左 做2次单次划分的问题, 最后用一次 for loop 遍历, 寻找2次的切分点
+对于最后寻找切分点，需要使用gobal的数组!!! 千万注意
+
+### 4.8 Maximum Subarray III
+
+对于N次切分, 除了使用local和gobal数组, 还需要多开1个维度的变量记录切分次数!
+
+state:
+    local[i][j]: 表示前i个数包含第i个元素进行j次操作的最大值
+    global[i][j]: 表示前i个数进行j次操作的最大值
+
+function:
+    local[i][j] = max(local[i - 1][j] + nums[i], global[i - 1][j - 1] + nums[i]);
+    gobal[i][j] = max(global[i - 1][j], local[i][j])
+
+initialization:
+    local[i][0] = global[i][0] = 0;
+
+answer:
+    global[len][k]
