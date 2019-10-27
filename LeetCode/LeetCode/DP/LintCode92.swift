@@ -30,10 +30,8 @@ public class LintCode92: Problem {
         var f = [Int](repeating: 0, count: m+1)
         
         for i in 1...n {
-            for j in (1...m).reversed() {
-                if j >= A[i-1] {
-                    f[j] = max(f[j], f[j-A[i-1]] + A[i-1])
-                }
+            for j in (A[i-1]...m).reversed() {
+                f[j] = max(f[j], f[j-A[i-1]] + A[i-1])
             }
         }
         
