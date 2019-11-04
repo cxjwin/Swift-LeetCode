@@ -86,6 +86,8 @@
 		2AD8626D23599D3F00981142 /* Problem611Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626C23599D3F00981142 /* Problem611Tests.swift */; };
 		2AD8626F2359B7E500981142 /* LintCode43.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626E2359B7E500981142 /* LintCode43.swift */; };
 		2AD862712359B83000981142 /* LintCode43Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD862702359B83000981142 /* LintCode43Tests.swift */; };
+		2ADB7ED6236C2DAA003FFCAA /* LintCode564.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */; };
+		2ADB7ED8236C37DC003FFCAA /* LintCode564Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */; };
 		2AE41D6A23477B7600105341 /* Problem63.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D6923477B7600105341 /* Problem63.swift */; };
 		2AE41D6C2347828B00105341 /* Problem63Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D6B2347828B00105341 /* Problem63Tests.swift */; };
 /* End PBXBuildFile section */
@@ -183,6 +185,8 @@
 		2AD8626C23599D3F00981142 /* Problem611Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem611Tests.swift; sourceTree = "<group>"; };
 		2AD8626E2359B7E500981142 /* LintCode43.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode43.swift; sourceTree = "<group>"; };
 		2AD862702359B83000981142 /* LintCode43Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode43Tests.swift; sourceTree = "<group>"; };
+		2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode564.swift; sourceTree = "<group>"; };
+		2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode564Tests.swift; sourceTree = "<group>"; };
 		2AE41D6923477B7600105341 /* Problem63.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem63.swift; sourceTree = "<group>"; };
 		2AE41D6B2347828B00105341 /* Problem63Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem63Tests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -218,6 +222,7 @@
 				2A3B363023688DEB00519E06 /* LintCode513.swift */,
 				2A3B3628236584D300519E06 /* LintCode562.swift */,
 				2A3B362C2365C5E900519E06 /* LintCode563.swift */,
+				2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */,
 				2A65BC6123507016004BBEAF /* Problem45.swift */,
 				2A3B361823561AB500519E06 /* Problem53.swift */,
 				2ABFF4972344E62100D63ED8 /* Problem55.swift */,
@@ -336,6 +341,7 @@
 				2A3B36342368916F00519E06 /* LintCode513Tests.swift */,
 				2A3B362A2365853800519E06 /* LintCode562Tests.swift */,
 				2A3B362E2365CF5E00519E06 /* LintCode563Tests.swift */,
+				2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */,
 				2A65BC6323507569004BBEAF /* Problem45Tests.swift */,
 				2A3B361A23561C9700519E06 /* Problem53Tests.swift */,
 				2ABFF4992344EAFD00D63ED8 /* Problem55Tests.swift */,
@@ -516,6 +522,7 @@
 				2A3B362523657B7F00519E06 /* LintCode440.swift in Sources */,
 				2A0CC9FF234ACB1400481AE1 /* Problem543.swift in Sources */,
 				2AD862562358187000981142 /* Problem123.swift in Sources */,
+				2ADB7ED6236C2DAA003FFCAA /* LintCode564.swift in Sources */,
 				2A82BBE1234494AF00F0D932 /* Problem.swift in Sources */,
 				2A3B36152354CDED00519E06 /* Problem343.swift in Sources */,
 				2AD862182355A66C00981142 /* Problem97.swift in Sources */,
@@ -562,6 +569,7 @@
 				2A3B36132350D2BC00519E06 /* Problem300Tests.swift in Sources */,
 				2A706B152348DA6700FDD7C4 /* Problem256Tests.swift in Sources */,
 				2A65BC7923542096004BBEAF /* Problem198Tests.swift in Sources */,
+				2ADB7ED8236C37DC003FFCAA /* LintCode564Tests.swift in Sources */,
 				2A5B601122F708AF00A1BF09 /* Problem543Tests.swift in Sources */,
 				2A3B3623236348C100519E06 /* LintCode125Tests.swift in Sources */,
 				2A3B36172354D3E700519E06 /* Problem343Tests.swift in Sources */,
