@@ -29,6 +29,8 @@
 		2A3B363D2369F86E00519E06 /* LintCode437Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B363C2369F86E00519E06 /* LintCode437Tests.swift */; };
 		2A3D835C23545CC800CAF64B /* Problem213.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3D835B23545CC800CAF64B /* Problem213.swift */; };
 		2A3D835E23545FBE00CAF64B /* Problem213Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3D835D23545FBE00CAF64B /* Problem213Tests.swift */; };
+		2A4B32B423711D5B0040DF49 /* Problem821.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B32B323711D5B0040DF49 /* Problem821.swift */; };
+		2A4B32B6237120390040DF49 /* Problem821Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4B32B5237120390040DF49 /* Problem821Tests.swift */; };
 		2A5B5FF822F5DE7600A1BF09 /* LeetCode.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A5B5FEE22F5DE7600A1BF09 /* LeetCode.framework */; };
 		2A5B5FFF22F5DE7600A1BF09 /* LeetCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A5B5FF122F5DE7600A1BF09 /* LeetCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2A5B600D22F5DF0600A1BF09 /* Tree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A5B600C22F5DF0600A1BF09 /* Tree.swift */; };
@@ -76,8 +78,6 @@
 		2AD8625823583E1A00981142 /* Problem123Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8625723583E1A00981142 /* Problem123Tests.swift */; };
 		2AD8625D2358971F00981142 /* Problem188.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8625C2358971F00981142 /* Problem188.swift */; };
 		2AD8625F2358976700981142 /* Problem188Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8625E2358976700981142 /* Problem188Tests.swift */; };
-		2AD8626323595F6E00981142 /* LintCode42.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626223595F6E00981142 /* LintCode42.swift */; };
-		2AD862652359653F00981142 /* LintCode42Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD862642359653F00981142 /* LintCode42Tests.swift */; };
 		2AD8626B23599D1400981142 /* Problem611.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626A23599D1400981142 /* Problem611.swift */; };
 		2AD8626D23599D3F00981142 /* Problem611Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626C23599D3F00981142 /* Problem611Tests.swift */; };
 		2AD8626F2359B7E500981142 /* LintCode43.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626E2359B7E500981142 /* LintCode43.swift */; };
@@ -121,6 +121,8 @@
 		2A3B363C2369F86E00519E06 /* LintCode437Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode437Tests.swift; sourceTree = "<group>"; };
 		2A3D835B23545CC800CAF64B /* Problem213.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem213.swift; sourceTree = "<group>"; };
 		2A3D835D23545FBE00CAF64B /* Problem213Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem213Tests.swift; sourceTree = "<group>"; };
+		2A4B32B323711D5B0040DF49 /* Problem821.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem821.swift; sourceTree = "<group>"; };
+		2A4B32B5237120390040DF49 /* Problem821Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem821Tests.swift; sourceTree = "<group>"; };
 		2A5B5FEE22F5DE7600A1BF09 /* LeetCode.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LeetCode.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A5B5FF122F5DE7600A1BF09 /* LeetCode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeetCode.h; sourceTree = "<group>"; };
 		2A5B5FF222F5DE7600A1BF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -171,8 +173,6 @@
 		2AD8625723583E1A00981142 /* Problem123Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem123Tests.swift; sourceTree = "<group>"; };
 		2AD8625C2358971F00981142 /* Problem188.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem188.swift; sourceTree = "<group>"; };
 		2AD8625E2358976700981142 /* Problem188Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem188Tests.swift; sourceTree = "<group>"; };
-		2AD8626223595F6E00981142 /* LintCode42.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode42.swift; sourceTree = "<group>"; };
-		2AD862642359653F00981142 /* LintCode42Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode42Tests.swift; sourceTree = "<group>"; };
 		2AD8626A23599D1400981142 /* Problem611.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem611.swift; sourceTree = "<group>"; };
 		2AD8626C23599D3F00981142 /* Problem611Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem611Tests.swift; sourceTree = "<group>"; };
 		2AD8626E2359B7E500981142 /* LintCode43.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode43.swift; sourceTree = "<group>"; };
@@ -205,7 +205,6 @@
 		2A0CC9F8234ACA1E00481AE1 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2AD8626223595F6E00981142 /* LintCode42.swift */,
 				2AD8626E2359B7E500981142 /* LintCode43.swift */,
 				2A3B363A2369F52900519E06 /* LintCode437.swift */,
 				2A3B362423657B7F00519E06 /* LintCode440.swift */,
@@ -322,7 +321,6 @@
 		2A706B21234985DD00FDD7C4 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2AD862642359653F00981142 /* LintCode42Tests.swift */,
 				2AD862702359B83000981142 /* LintCode43Tests.swift */,
 				2A3B363C2369F86E00519E06 /* LintCode437Tests.swift */,
 				2A3B362623657F8F00519E06 /* LintCode440Tests.swift */,
@@ -374,6 +372,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD8626C23599D3F00981142 /* Problem611Tests.swift */,
+				2A4B32B5237120390040DF49 /* Problem821Tests.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -382,6 +381,7 @@
 			isa = PBXGroup;
 			children = (
 				2AD8626A23599D1400981142 /* Problem611.swift */,
+				2A4B32B323711D5B0040DF49 /* Problem821.swift */,
 			);
 			path = Others;
 			sourceTree = "<group>";
@@ -503,6 +503,7 @@
 				2AD8626F2359B7E500981142 /* LintCode43.swift in Sources */,
 				2A3B361923561AB500519E06 /* Problem53.swift in Sources */,
 				2AD8621023556A8C00981142 /* Problem1143.swift in Sources */,
+				2A4B32B423711D5B0040DF49 /* Problem821.swift in Sources */,
 				2A3B363223688DFC00519E06 /* LintCode513.swift in Sources */,
 				2A706B132348D4C000FDD7C4 /* Problem256.swift in Sources */,
 				2AD862282357120F00981142 /* Problem122.swift in Sources */,
@@ -529,7 +530,6 @@
 				2AD862142355743F00981142 /* Problem72.swift in Sources */,
 				2A3B362D2365C5E900519E06 /* LintCode563.swift in Sources */,
 				2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */,
-				2AD8626323595F6E00981142 /* LintCode42.swift in Sources */,
 				2AD862242356F2FF00981142 /* Problem121.swift in Sources */,
 				2A65BC682351A1D7004BBEAF /* Problem221.swift in Sources */,
 				2A3B36372369DFAF00519E06 /* Problem132.swift in Sources */,
@@ -558,6 +558,7 @@
 				2A5B601122F708AF00A1BF09 /* Problem543Tests.swift in Sources */,
 				2A3B36172354D3E700519E06 /* Problem343Tests.swift in Sources */,
 				2AD8625823583E1A00981142 /* Problem123Tests.swift in Sources */,
+				2A4B32B6237120390040DF49 /* Problem821Tests.swift in Sources */,
 				2AD8621E2355BAD700981142 /* Problem115Tests.swift in Sources */,
 				2A65BC6C2351A6CF004BBEAF /* Problem221Tests.swift in Sources */,
 				2AD8625F2358976700981142 /* Problem188Tests.swift in Sources */,
@@ -570,7 +571,6 @@
 				2AD862162355747200981142 /* Problem72Tests.swift in Sources */,
 				2A5B83A12343AAA2004D9389 /* Problem322Tests.swift in Sources */,
 				2A3D835E23545FBE00CAF64B /* Problem213Tests.swift in Sources */,
-				2AD862652359653F00981142 /* LintCode42Tests.swift in Sources */,
 				2AD8621223556AC200981142 /* Problem1143Tests.swift in Sources */,
 				2ABFF4962344DFD100D63ED8 /* Problem62Tests.swift in Sources */,
 				2A706B1D23497FCA00FDD7C4 /* Problem674Tests.swift in Sources */,
