@@ -80,8 +80,6 @@
 		2AD8625F2358976700981142 /* Problem188Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8625E2358976700981142 /* Problem188Tests.swift */; };
 		2AD8626B23599D1400981142 /* Problem611.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626A23599D1400981142 /* Problem611.swift */; };
 		2AD8626D23599D3F00981142 /* Problem611Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626C23599D3F00981142 /* Problem611Tests.swift */; };
-		2AD8626F2359B7E500981142 /* LintCode43.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD8626E2359B7E500981142 /* LintCode43.swift */; };
-		2AD862712359B83000981142 /* LintCode43Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD862702359B83000981142 /* LintCode43Tests.swift */; };
 		2ADB7ED6236C2DAA003FFCAA /* LintCode564.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */; };
 		2ADB7ED8236C37DC003FFCAA /* LintCode564Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */; };
 		2AE41D6A23477B7600105341 /* Problem63.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE41D6923477B7600105341 /* Problem63.swift */; };
@@ -175,8 +173,6 @@
 		2AD8625E2358976700981142 /* Problem188Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem188Tests.swift; sourceTree = "<group>"; };
 		2AD8626A23599D1400981142 /* Problem611.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem611.swift; sourceTree = "<group>"; };
 		2AD8626C23599D3F00981142 /* Problem611Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem611Tests.swift; sourceTree = "<group>"; };
-		2AD8626E2359B7E500981142 /* LintCode43.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode43.swift; sourceTree = "<group>"; };
-		2AD862702359B83000981142 /* LintCode43Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode43Tests.swift; sourceTree = "<group>"; };
 		2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode564.swift; sourceTree = "<group>"; };
 		2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode564Tests.swift; sourceTree = "<group>"; };
 		2AE41D6923477B7600105341 /* Problem63.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem63.swift; sourceTree = "<group>"; };
@@ -205,7 +201,6 @@
 		2A0CC9F8234ACA1E00481AE1 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2AD8626E2359B7E500981142 /* LintCode43.swift */,
 				2A3B363A2369F52900519E06 /* LintCode437.swift */,
 				2A3B362423657B7F00519E06 /* LintCode440.swift */,
 				2A3B363023688DEB00519E06 /* LintCode513.swift */,
@@ -321,7 +316,6 @@
 		2A706B21234985DD00FDD7C4 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2AD862702359B83000981142 /* LintCode43Tests.swift */,
 				2A3B363C2369F86E00519E06 /* LintCode437Tests.swift */,
 				2A3B362623657F8F00519E06 /* LintCode440Tests.swift */,
 				2A3B36342368916F00519E06 /* LintCode513Tests.swift */,
@@ -500,7 +494,6 @@
 				2A3B36112350D21000519E06 /* Problem300.swift in Sources */,
 				2A65BC722351E42E004BBEAF /* Problem140.swift in Sources */,
 				2AD862202356EA7A00981142 /* Problem152.swift in Sources */,
-				2AD8626F2359B7E500981142 /* LintCode43.swift in Sources */,
 				2A3B361923561AB500519E06 /* Problem53.swift in Sources */,
 				2AD8621023556A8C00981142 /* Problem1143.swift in Sources */,
 				2A4B32B423711D5B0040DF49 /* Problem821.swift in Sources */,
@@ -578,7 +571,6 @@
 				2A3B361B23561C9700519E06 /* Problem53Tests.swift in Sources */,
 				2A0CC9F623498E7C00481AE1 /* Problem64Tests.swift in Sources */,
 				2AD8621A2355A6FD00981142 /* Problem97Tests.swift in Sources */,
-				2AD862712359B83000981142 /* LintCode43Tests.swift in Sources */,
 				2AD862542358126600981142 /* Problem122Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
