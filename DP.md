@@ -399,3 +399,7 @@ initialization:
 
 answer:
     global[len][k]
+
+## 背包型动态规划
+
+可以重复取元素则背包容量从小到大遍历, 反之从大到小遍历.
