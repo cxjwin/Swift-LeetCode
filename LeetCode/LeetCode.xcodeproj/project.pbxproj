@@ -15,8 +15,6 @@
 		2A3B36172354D3E700519E06 /* Problem343Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B36162354D3E700519E06 /* Problem343Tests.swift */; };
 		2A3B361923561AB500519E06 /* Problem53.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B361823561AB500519E06 /* Problem53.swift */; };
 		2A3B361B23561C9700519E06 /* Problem53Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B361A23561C9700519E06 /* Problem53Tests.swift */; };
-		2A3B3629236584D300519E06 /* LintCode562.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B3628236584D300519E06 /* LintCode562.swift */; };
-		2A3B362B2365853800519E06 /* LintCode562Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B362A2365853800519E06 /* LintCode562Tests.swift */; };
 		2A3B362D2365C5E900519E06 /* LintCode563.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B362C2365C5E900519E06 /* LintCode563.swift */; };
 		2A3B362F2365CF5E00519E06 /* LintCode563Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B362E2365CF5E00519E06 /* LintCode563Tests.swift */; };
 		2A3B36372369DFAF00519E06 /* Problem132.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3B36362369DFAF00519E06 /* Problem132.swift */; };
@@ -99,8 +97,6 @@
 		2A3B36162354D3E700519E06 /* Problem343Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem343Tests.swift; sourceTree = "<group>"; };
 		2A3B361823561AB500519E06 /* Problem53.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem53.swift; sourceTree = "<group>"; };
 		2A3B361A23561C9700519E06 /* Problem53Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem53Tests.swift; sourceTree = "<group>"; };
-		2A3B3628236584D300519E06 /* LintCode562.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode562.swift; sourceTree = "<group>"; };
-		2A3B362A2365853800519E06 /* LintCode562Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode562Tests.swift; sourceTree = "<group>"; };
 		2A3B362C2365C5E900519E06 /* LintCode563.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode563.swift; sourceTree = "<group>"; };
 		2A3B362E2365CF5E00519E06 /* LintCode563Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LintCode563Tests.swift; sourceTree = "<group>"; };
 		2A3B36362369DFAF00519E06 /* Problem132.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem132.swift; sourceTree = "<group>"; };
@@ -189,7 +185,6 @@
 		2A0CC9F8234ACA1E00481AE1 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2A3B3628236584D300519E06 /* LintCode562.swift */,
 				2A3B362C2365C5E900519E06 /* LintCode563.swift */,
 				2ADB7ED5236C2DAA003FFCAA /* LintCode564.swift */,
 				2A65BC6123507016004BBEAF /* Problem45.swift */,
@@ -301,7 +296,6 @@
 		2A706B21234985DD00FDD7C4 /* DP */ = {
 			isa = PBXGroup;
 			children = (
-				2A3B362A2365853800519E06 /* LintCode562Tests.swift */,
 				2A3B362E2365CF5E00519E06 /* LintCode563Tests.swift */,
 				2ADB7ED7236C37DC003FFCAA /* LintCode564Tests.swift */,
 				2A65BC6323507569004BBEAF /* Problem45Tests.swift */,
@@ -494,7 +488,6 @@
 				2A706B24234986ED00FDD7C4 /* Problem64.swift in Sources */,
 				2AD8625D2358971F00981142 /* Problem188.swift in Sources */,
 				2ABB864E2344D1B2004C8DFC /* Problem62.swift in Sources */,
-				2A3B3629236584D300519E06 /* LintCode562.swift in Sources */,
 				2A706B172348EB9700FDD7C4 /* Problem91.swift in Sources */,
 				2AE41D6A23477B7600105341 /* Problem63.swift in Sources */,
 				2AD8626B23599D1400981142 /* Problem611.swift in Sources */,
@@ -535,7 +528,6 @@
 				2A3B36392369E93B00519E06 /* Problem132Tests.swift in Sources */,
 				2A5B600F22F5E0A400A1BF09 /* TreeTests.swift in Sources */,
 				2A706B192348F55900FDD7C4 /* Problem91Tests.swift in Sources */,
-				2A3B362B2365853800519E06 /* LintCode562Tests.swift in Sources */,
 				2A65BC702351C691004BBEAF /* Problem139Tests.swift in Sources */,
 				2AD862162355747200981142 /* Problem72Tests.swift in Sources */,
 				2A5B83A12343AAA2004D9389 /* Problem322Tests.swift in Sources */,

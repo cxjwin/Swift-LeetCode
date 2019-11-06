@@ -10,5 +10,6 @@ add_subdirectory(125.backpack-ii)
 add_subdirectory(437.copy-books)
 add_subdirectory(440.backpack-iii)
 add_subdirectory(513.perfect-squares)
+add_subdirectory(562.backpack-iv)
 
 add_executable(LintCode example.cpp)
