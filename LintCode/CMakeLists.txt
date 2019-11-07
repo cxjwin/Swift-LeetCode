@@ -12,5 +12,6 @@ add_subdirectory(440.backpack-iii)
 add_subdirectory(513.perfect-squares)
 add_subdirectory(562.backpack-iv)
 add_subdirectory(563.backpack-v)
+add_subdirectory(564.combination-sum-iv)
 
 add_executable(LintCode example.cpp)
