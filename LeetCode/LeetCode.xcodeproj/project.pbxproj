@@ -48,6 +48,8 @@
 		2A706B1D23497FCA00FDD7C4 /* Problem674Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A706B1C23497FCA00FDD7C4 /* Problem674Tests.swift */; };
 		2A706B24234986ED00FDD7C4 /* Problem64.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A706B23234986ED00FDD7C4 /* Problem64.swift */; };
 		2A82BBE1234494AF00F0D932 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A82BBE0234494AF00F0D932 /* Problem.swift */; };
+		2A8880762375568D00F3C0B6 /* Heap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8880752375568D00F3C0B6 /* Heap.swift */; };
+		2A88809E23756CAE00F3C0B6 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A88809D23756CAE00F3C0B6 /* HeapTests.swift */; };
 		2ABB864E2344D1B2004C8DFC /* Problem62.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB864D2344D1B2004C8DFC /* Problem62.swift */; };
 		2ABFF4962344DFD100D63ED8 /* Problem62Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */; };
 		2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4972344E62100D63ED8 /* Problem55.swift */; };
@@ -131,6 +133,8 @@
 		2A706B1C23497FCA00FDD7C4 /* Problem674Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem674Tests.swift; sourceTree = "<group>"; };
 		2A706B23234986ED00FDD7C4 /* Problem64.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem64.swift; sourceTree = "<group>"; };
 		2A82BBE0234494AF00F0D932 /* Problem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		2A8880752375568D00F3C0B6 /* Heap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Heap.swift; sourceTree = "<group>"; };
+		2A88809D23756CAE00F3C0B6 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		2ABB864D2344D1B2004C8DFC /* Problem62.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62.swift; sourceTree = "<group>"; };
 		2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62Tests.swift; sourceTree = "<group>"; };
 		2ABFF4972344E62100D63ED8 /* Problem55.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem55.swift; sourceTree = "<group>"; };
@@ -276,6 +280,7 @@
 		2A5B5FFB22F5DE7600A1BF09 /* LeetCodeTests */ = {
 			isa = PBXGroup;
 			children = (
+				2A88809C23756C8400F3C0B6 /* DataStructure */,
 				2A5B5FFE22F5DE7600A1BF09 /* Info.plist */,
 				2A706B21234985DD00FDD7C4 /* DP */,
 				2AD8626623599CB500981142 /* Others */,
@@ -300,6 +305,7 @@
 		2A5B600B22F5DEDB00A1BF09 /* DataStructure */ = {
 			isa = PBXGroup;
 			children = (
+				2A8880752375568D00F3C0B6 /* Heap.swift */,
 				2A5B600C22F5DF0600A1BF09 /* Tree.swift */,
 			);
 			path = DataStructure;
@@ -342,10 +348,18 @@
 		2A706B22234985E600FDD7C4 /* Tree */ = {
 			isa = PBXGroup;
 			children = (
-				2A5B600E22F5E0A400A1BF09 /* TreeTests.swift */,
 				2A5B601022F708AF00A1BF09 /* Problem543Tests.swift */,
 			);
 			path = Tree;
+			sourceTree = "<group>";
+		};
+		2A88809C23756C8400F3C0B6 /* DataStructure */ = {
+			isa = PBXGroup;
+			children = (
+				2A88809D23756CAE00F3C0B6 /* HeapTests.swift */,
+				2A5B600E22F5E0A400A1BF09 /* TreeTests.swift */,
+			);
+			path = DataStructure;
 			sourceTree = "<group>";
 		};
 		2AD8626623599CB500981142 /* Others */ = {
@@ -505,6 +519,7 @@
 				2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */,
 				2A5149BF2373F39B00ACB7E1 /* Problem6.swift in Sources */,
 				2AD862242356F2FF00981142 /* Problem121.swift in Sources */,
+				2A8880762375568D00F3C0B6 /* Heap.swift in Sources */,
 				2A65BC682351A1D7004BBEAF /* Problem221.swift in Sources */,
 				2A3B36372369DFAF00519E06 /* Problem132.swift in Sources */,
 				2A706B1B23497E2100FDD7C4 /* Problem674.swift in Sources */,
@@ -525,6 +540,7 @@
 				2A3B36132350D2BC00519E06 /* Problem300Tests.swift in Sources */,
 				2A706B152348DA6700FDD7C4 /* Problem256Tests.swift in Sources */,
 				2A5149C12373FF6000ACB7E1 /* Problem6Tests.swift in Sources */,
+				2A88809E23756CAE00F3C0B6 /* HeapTests.swift in Sources */,
 				2A65BC7923542096004BBEAF /* Problem198Tests.swift in Sources */,
 				2A5B601122F708AF00A1BF09 /* Problem543Tests.swift in Sources */,
 				2A3B36172354D3E700519E06 /* Problem343Tests.swift in Sources */,
