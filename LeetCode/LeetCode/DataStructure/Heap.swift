@@ -81,41 +81,53 @@ public struct Heap<T> {
         }
     }
     
-    public mutating func shiftUp(from index: Int) {
-        if index == 0 {
-            return
+    @discardableResult public mutating func remove(at index: Int) -> T? {
+        guard index < nodes.count else {
+            return nil
         }
         
+        let size = nodes.count - 1
+        if index != size {
+            nodes.swapAt(index, size)
+            shiftDown(from: index, until: size)
+            shiftUp(from: index)
+        }
+        return nodes.removeLast()
+    }
+    
+    fileprivate mutating func shiftUp(from index: Int) {
         var i = index
-        while i > 0 {
-            let parent = parentIndex(of: i)
-            if priorityFunction(nodes[parent], nodes[i]) {
+        while true {
+            let parentIdx = parentIndex(of: i)
+            if parentIdx > 0 && priorityFunction(nodes[i], nodes[parentIdx]) {
+                nodes.swapAt(i, parentIdx)
+            } else {
                 break
             }
-            nodes.swapAt(i, parent)
-            i = parent
+            i = parentIdx
         }
     }
     
-    public mutating func shiftDown(from index: Int, until endIndex: Int) {
+    fileprivate mutating func shiftDown(from index: Int, until endIndex: Int) {
         var i = index
         while true {
-            let left = leftChildIndex(of: i)
-            let right = left + 1
+            var maxPos = i
             
-            var first = i
-            if left < endIndex && priorityFunction(nodes[left], nodes[first]) {
-                first = left
+            let leftChildIdx = leftChildIndex(of: maxPos)
+            let rightChildIdx = leftChildIdx + 1
+            
+            if leftChildIdx < endIndex && priorityFunction(nodes[leftChildIdx], nodes[maxPos]) {
+                maxPos = leftChildIdx
             }
-            if right < endIndex && priorityFunction(nodes[right], nodes[first]) {
-                first = right
+            if rightChildIdx < endIndex && priorityFunction(nodes[rightChildIdx], nodes[maxPos]) {
+                maxPos = rightChildIdx
             }
-            if first == i {
+            if maxPos == i {
                 break
             }
             
-            nodes.swapAt(i, first)
-            i = first
+            nodes.swapAt(maxPos, index)
+            i = maxPos
         }
     }
     
@@ -123,3 +135,4 @@ public struct Heap<T> {
         shiftDown(from: index, until: nodes.count)
     }
 }
+

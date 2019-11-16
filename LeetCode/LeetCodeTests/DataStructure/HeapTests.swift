@@ -19,16 +19,17 @@ class HeapTests: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
     func testShiftDown() {
-        // [1, 3, 6, 5, 9, 8]
         let arr = [7, 6, 5, 4, 3, 2, 1]
         let h = Heap<Int>(array: arr, sort: <)
-        XCTAssert(h.allNodes == [])
+        print(h.allNodes)
     }
-
+    
+    func testInsert() {
+        var h = Heap(array: [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1], sort: >)
+        XCTAssertEqual(h.allNodes, [15, 13, 9, 5, 12, 8, 7, 4, 0, 6, 2, 1])
+      
+        h.insert(10)
+        XCTAssertEqual(h.allNodes, [15, 13, 10, 5, 12, 9, 7, 4, 0, 6, 2, 1, 8])
+    }
 }
