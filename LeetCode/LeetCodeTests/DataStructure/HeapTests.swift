@@ -27,8 +27,8 @@ class HeapTests: XCTestCase {
     func testShiftDown() {
         // [1, 3, 6, 5, 9, 8]
         let arr = [7, 6, 5, 4, 3, 2, 1]
-        var h = Heap<Int>(array: arr, sort: <)
-        print(h.allNodes())
+        let h = Heap<Int>(array: arr, sort: <)
+        XCTAssert(h.allNodes == [])
     }
 
 }

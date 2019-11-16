@@ -9,6 +9,24 @@
 public struct Heap<T> {
     var nodes = [T]()
     
+    public var allNodes: [T] {
+        get {
+            return nodes
+        }
+    }
+    
+    public var count: Int {
+        get {
+            return nodes.count
+        }
+    }
+    
+    public var isEmpty: Bool {
+        get {
+            return nodes.isEmpty
+        }
+    }
+    
     let priorityFunction: (T, T) -> Bool
     
     public init(sort: @escaping (T, T) -> Bool) {
@@ -27,10 +45,6 @@ public struct Heap<T> {
       }
     }
     
-    public func allNodes() -> [T] {
-        return nodes
-    }
-    
     @inline(__always) internal func parentIndex(of index: Int) -> Int {
         return (index - 1) / 2
     }
@@ -43,31 +57,66 @@ public struct Heap<T> {
         return (2 * index) + 2
     }
     
-    public func count() -> Int {
-        return nodes.count
-    }
-    
     public func peek() -> T? {
         return nodes.first
     }
     
-    public mutating func shiftDown(from index: Int, until endIndex: Int) {
-        let leftChildIndex = self.leftChildIndex(of: index)
-        let rightChildIndex = leftChildIndex + 1
+    public mutating func insert(_ value: T) {
+        nodes.append(value)
+        shiftUp(from: nodes.count - 1)
+    }
+    
+    @discardableResult public mutating func remove() -> T? {
+        guard !nodes.isEmpty else {
+            return nil
+        }
         
-        var first = index
-        if leftChildIndex < endIndex && priorityFunction(nodes[leftChildIndex], nodes[first]) {
-            first = leftChildIndex
+        if nodes.count == 1 {
+            return nodes.removeLast()
+        } else {
+            let value = nodes[0]
+            nodes[0] = nodes.removeLast()
+            shiftDown(0)
+            return value
         }
-        if rightChildIndex < endIndex && priorityFunction(nodes[rightChildIndex], nodes[first]) {
-            first = rightChildIndex
-        }
-        if first == index {
+    }
+    
+    public mutating func shiftUp(from index: Int) {
+        if index == 0 {
             return
         }
         
-        nodes.swapAt(index, first)
-        shiftDown(from: first, until: endIndex)
+        var i = index
+        while i > 0 {
+            let parent = parentIndex(of: i)
+            if priorityFunction(nodes[parent], nodes[i]) {
+                break
+            }
+            nodes.swapAt(i, parent)
+            i = parent
+        }
+    }
+    
+    public mutating func shiftDown(from index: Int, until endIndex: Int) {
+        var i = index
+        while true {
+            let left = leftChildIndex(of: i)
+            let right = left + 1
+            
+            var first = i
+            if left < endIndex && priorityFunction(nodes[left], nodes[first]) {
+                first = left
+            }
+            if right < endIndex && priorityFunction(nodes[right], nodes[first]) {
+                first = right
+            }
+            if first == i {
+                break
+            }
+            
+            nodes.swapAt(i, first)
+            i = first
+        }
     }
     
     public mutating func shiftDown(_ index: Int) {
