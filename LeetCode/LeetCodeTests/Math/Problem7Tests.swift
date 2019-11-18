@@ -23,12 +23,16 @@ class Problem7Tests: XCTestCase {
 
     func testEeverse() {
         XCTAssert(p.reverse(123) == 321)
-        
+
         XCTAssert(p.reverse(-123) == -321)
-        
+
         XCTAssert(p.reverse(120) == 21)
-        
+
         XCTAssert(p.reverse(1534236469) == 0)
+
+        XCTAssert(p.reverse(-2147483648) == 0)
+        
+        XCTAssert(p.reverse(-2147483412) == -2143847412)
     }
 
 }

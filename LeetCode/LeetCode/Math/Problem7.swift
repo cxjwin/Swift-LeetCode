@@ -7,45 +7,27 @@
 //
 
 public class Problem7: Problem {
-    public func reverse(_ x: Int32) -> Int32 {
-        let isNegative = x < 0
+    public func reverse(_ x: Int) -> Int {
+        var num = x
         
-        var absX = x
-        if isNegative {
-            absX = -x
-        }
-        
-        if absX < 10 {
-            return x
-        }
-        
-        var num = absX
-        var d: Int32 = 1
-        while num / 10 > 0 {
-            d *= 10
+        var rev = 0
+        while num != 0 {
+            let temp = num % 10
+            
+            if x < 0 {
+                if rev < Int(Int32.min / 10) || (rev == Int(Int32.min / 10) && temp < -8) {
+                    return 0
+                }
+            } else {
+                if rev > Int(Int32.max / 10) || (rev == Int(Int32.max / 10) && temp > 7) {
+                    return 0
+                }
+            }
+            
+            rev = rev * 10 + temp
             num /= 10
         }
         
-        num = absX
-        var arr = [Int32]()
-        while d > 0 {
-            let temp = num / d
-            arr.append(temp)
-            num -= (d * temp)
-            d /= 10
-        }
-        
-        d = 1
-        var res: Int64 = 0
-        for i in 0..<arr.count {
-            res += Int64(arr[i]) * Int64(d)
-            d *= 10
-        }
-        
-        if res > Int64(Int32.max) {
-            return 0
-        }
-        
-        return Int32(isNegative ? -res : res)
+        return rev
     }
 }
