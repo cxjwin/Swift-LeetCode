@@ -76,6 +76,8 @@
 		2A88809E23756CAE00F3C0B6 /* HeapTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A88809D23756CAE00F3C0B6 /* HeapTests.swift */; };
 		2AB5E2362396B2C300C94DCA /* Problem12.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5E2352396B2C300C94DCA /* Problem12.swift */; };
 		2AB5E2382396B8CF00C94DCA /* Problem12Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5E2372396B8CF00C94DCA /* Problem12Tests.swift */; };
+		2AB5E23A2396BF6800C94DCA /* Problem13.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5E2392396BF6800C94DCA /* Problem13.swift */; };
+		2AB5E23C2396C26F00C94DCA /* Problem13Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AB5E23B2396C26F00C94DCA /* Problem13Tests.swift */; };
 		2ABB864E2344D1B2004C8DFC /* Problem62.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB864D2344D1B2004C8DFC /* Problem62.swift */; };
 		2ABFF4962344DFD100D63ED8 /* Problem62Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */; };
 		2ABFF4982344E62100D63ED8 /* Problem55.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABFF4972344E62100D63ED8 /* Problem55.swift */; };
@@ -189,6 +191,8 @@
 		2A88809D23756CAE00F3C0B6 /* HeapTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeapTests.swift; sourceTree = "<group>"; };
 		2AB5E2352396B2C300C94DCA /* Problem12.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem12.swift; sourceTree = "<group>"; };
 		2AB5E2372396B8CF00C94DCA /* Problem12Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem12Tests.swift; sourceTree = "<group>"; };
+		2AB5E2392396BF6800C94DCA /* Problem13.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem13.swift; sourceTree = "<group>"; };
+		2AB5E23B2396C26F00C94DCA /* Problem13Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem13Tests.swift; sourceTree = "<group>"; };
 		2ABB864D2344D1B2004C8DFC /* Problem62.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62.swift; sourceTree = "<group>"; };
 		2ABFF4952344DFD100D63ED8 /* Problem62Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem62Tests.swift; sourceTree = "<group>"; };
 		2ABFF4972344E62100D63ED8 /* Problem55.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Problem55.swift; sourceTree = "<group>"; };
@@ -244,6 +248,7 @@
 				2A0A77CE237A5C6F001B711A /* Problem7.swift */,
 				2AD132832382BCDA00C1AD8D /* Problem9.swift */,
 				2AB5E2352396B2C300C94DCA /* Problem12.swift */,
+				2AB5E2392396BF6800C94DCA /* Problem13.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				2A0A77D1237A7DCE001B711A /* Problem7Tests.swift */,
 				2AD132852382C09C00C1AD8D /* Problem9Tests.swift */,
 				2AB5E2372396B8CF00C94DCA /* Problem12Tests.swift */,
+				2AB5E23B2396C26F00C94DCA /* Problem13Tests.swift */,
 			);
 			path = Math;
 			sourceTree = "<group>";
@@ -652,6 +658,7 @@
 				2A706B132348D4C000FDD7C4 /* Problem256.swift in Sources */,
 				2A5BA57923901D1B0019076C /* LinkedList.swift in Sources */,
 				2AD862282357120F00981142 /* Problem122.swift in Sources */,
+				2AB5E23A2396BF6800C94DCA /* Problem13.swift in Sources */,
 				2A3D835C23545CC800CAF64B /* Problem213.swift in Sources */,
 				2A0CC9FF234ACB1400481AE1 /* Problem543.swift in Sources */,
 				2A0A77CF237A5C6F001B711A /* Problem7.swift in Sources */,
@@ -711,6 +718,7 @@
 				2A126C0B2393DBF900C49F01 /* Problem20Tests.swift in Sources */,
 				2A5DABA0237700DF00128791 /* Problem215Tests.swift in Sources */,
 				2A5BA57F2390225A0019076C /* Problem206Tests.swift in Sources */,
+				2AB5E23C2396C26F00C94DCA /* Problem13Tests.swift in Sources */,
 				2A5149C12373FF6000ACB7E1 /* Problem6Tests.swift in Sources */,
 				2A88809E23756CAE00F3C0B6 /* HeapTests.swift in Sources */,
 				2A65BC7923542096004BBEAF /* Problem198Tests.swift in Sources */,
