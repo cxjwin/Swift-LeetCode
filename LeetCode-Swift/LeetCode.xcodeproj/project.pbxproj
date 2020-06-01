@@ -388,10 +388,10 @@
 		2A5B5FF022F5DE7600A1BF09 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
-				2A5B600B22F5DEDB00A1BF09 /* DataStructure */,
-				2A5B600A22F5DEBF00A1BF09 /* Problems */,
 				2A5B5FF122F5DE7600A1BF09 /* LeetCode.h */,
 				2A5B5FF222F5DE7600A1BF09 /* Info.plist */,
+				2A5B600B22F5DEDB00A1BF09 /* DataStructure */,
+				2A5B600A22F5DEBF00A1BF09 /* Problems */,
 			);
 			path = LeetCode;
 			sourceTree = "<group>";
@@ -399,15 +399,15 @@
 		2A5B5FFB22F5DE7600A1BF09 /* LeetCodeTests */ = {
 			isa = PBXGroup;
 			children = (
-				2A17C80C23AA5EC8001A88EC /* Array */,
-				2A126C092393DBB400C49F01 /* Stack */,
 				2A5B5FFE22F5DE7600A1BF09 /* Info.plist */,
+				2A17C80C23AA5EC8001A88EC /* Array */,
 				2A88809C23756C8400F3C0B6 /* DataStructure */,
 				2A706B21234985DD00FDD7C4 /* DP */,
 				2A5DAB9C2376FA0600128791 /* Heap */,
 				2A5BA57D239022270019076C /* LinkedList */,
 				2A0A77D0237A7DB2001B711A /* Math */,
 				2AD8626623599CB500981142 /* Others */,
+				2A126C092393DBB400C49F01 /* Stack */,
 				2A5149BD2373F38B00ACB7E1 /* String */,
 				2A706B22234985E600FDD7C4 /* Tree */,
 			);

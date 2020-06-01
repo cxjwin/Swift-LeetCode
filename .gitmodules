@@ -1,0 +1,3 @@
+[submodule "go-algocasts"]
+	path = go-algocasts
+	url = https://github.com/cxjwin/go-algocasts.git

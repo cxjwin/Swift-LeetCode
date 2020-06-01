@@ -3,6 +3,7 @@ project(LintCode)
 
 set(CMAKE_CXX_STANDARD 17)
 
+add_subdirectory(000.playground)
 add_subdirectory(001.a-b-problem)
 add_subdirectory(029.interleaving-string)
 add_subdirectory(042.maximum-subarray-ii)
