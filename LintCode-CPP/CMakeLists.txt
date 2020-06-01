@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.15)
-project(LintCode)
+cmake_minimum_required(VERSION 3.16)
+project(LintCode_CPP)
 
 set(CMAKE_CXX_STANDARD 17)
 
@@ -26,4 +26,4 @@ add_subdirectory(563.backpack-v)
 add_subdirectory(564.combination-sum-iv)
 add_subdirectory(667.longest-palindromic-subsequence)
 
-add_executable(LintCode example.cpp)
+add_executable(LintCode_CPP example.cpp)
