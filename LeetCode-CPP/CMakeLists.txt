@@ -28,6 +28,7 @@ add_subdirectory(offer.16)
 add_subdirectory(offer.17)
 add_subdirectory(offer.18)
 add_subdirectory(offer.19)
+add_subdirectory(offer.20)
 add_subdirectory(offer.52)
 
 add_executable(LeetCode_CPP main.cpp)
