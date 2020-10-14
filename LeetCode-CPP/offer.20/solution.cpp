@@ -2,6 +2,9 @@
 // Created by smart on 2020/10/14.
 //
 
+#define CATCH_CONFIG_MAIN
+
+#include "../catch.hpp"
 #include <string>
 #include <unordered_map>
 
@@ -102,11 +105,33 @@ class Solution {
 public:
     bool isNumber(string s) {
         int state = 0;
-
+        int res = 0;
         for (auto &&c : s) {
-
+            auto type = typeChar(c);
+            auto map = states[res];
+            if (map.find(type) == map.end()) {
+                // not found
+                return false;
+            }
+            res = map[type];
         }
-
-        return state == 2
+        return res == 2 || res == 5 || res == 8 || res == 9;
     }
 };
+
+TEST_CASE("offer_20", "[isNumber]") {
+    auto s = Solution();
+
+    REQUIRE(s.isNumber("+100"));
+    REQUIRE(s.isNumber("5e2"));
+    REQUIRE(s.isNumber("-123"));
+    REQUIRE(s.isNumber("3.14125"));
+    REQUIRE(s.isNumber("-1E-16"));
+    REQUIRE(s.isNumber("01234"));
+
+    REQUIRE(!s.isNumber("12e"));
+    REQUIRE(!s.isNumber("1a3.14"));
+    REQUIRE(!s.isNumber("1.2.3"));
+    REQUIRE(!s.isNumber("+-5"));
+    REQUIRE(!s.isNumber("12e+5.4"));
+}
