@@ -27,8 +27,8 @@ class Solution {
     if (head == nullptr) {
       return head;
     }
-    if (vidited.find(head) != vidited.end()) {
-      return vidited[head];
+    if (visited.find(head) != visited.end()) {
+      return visited[head];
     }
     auto copy = new Node(head->val);
     visited[head] = copy;
