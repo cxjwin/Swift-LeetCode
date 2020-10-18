@@ -7,6 +7,10 @@
     "*.wxss": "css",
     "unordered_map": "cpp",
     "__config": "cpp",
-    "__nullptr": "cpp"
+    "__nullptr": "cpp",
+    "string": "cpp",
+    "*.tcc": "cpp",
+    "numeric": "cpp",
+    "queue": "cpp"
   }
 }
