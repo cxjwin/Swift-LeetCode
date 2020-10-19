@@ -1,0 +1,16 @@
+{
+  "C_Cpp.default.configurationProvider": "go2sh.cmake-integration",
+  "files.associations": {
+    "*.vue": "vue",
+    "*.wpy": "vue",
+    "*.wxml": "html",
+    "*.wxss": "css",
+    "unordered_map": "cpp",
+    "__config": "cpp",
+    "__nullptr": "cpp",
+    "string": "cpp",
+    "*.tcc": "cpp",
+    "numeric": "cpp",
+    "queue": "cpp"
+  }
+}
