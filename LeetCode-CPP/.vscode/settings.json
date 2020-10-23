@@ -25,6 +25,8 @@
     "regex": "cpp",
     "string_view": "cpp",
     "type_traits": "cpp",
-    "algorithm": "cpp"
+    "algorithm": "cpp",
+    "functional": "cpp",
+    "__functional_base": "cpp"
   }
 }
