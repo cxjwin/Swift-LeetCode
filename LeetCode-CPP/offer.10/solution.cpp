@@ -9,6 +9,23 @@ using namespace std;
 
 class Solution {
 public:
+    int fib(int n) {
+        if (n < 2) {
+            return n;
+        }
+        int step1 = 0;
+        int step2 = 1;
+        for (int i = 2; i <= n; ++i) {
+            int step3 = step1 + step2;
+            step1 = step2;
+            step2 = step3;
+        }
+        return step2;
+    }
+};
+
+class SolutionB {
+public:
     int numWays(int n) {
         if (n < 3) {
             return n == 0 ? 1 : n;
