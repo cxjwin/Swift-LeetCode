@@ -71,20 +71,19 @@ class SolutionII {
   }
 };
 
-class SolutionII {
-  int depth(TreeNode *root) {
+class SolutionII2 {
+  int recurr(TreeNode* root) {
     if (root == nullptr) {
       return 0;
     }
-    return max(depth(root->left), depth(root->right)) + 1;
+    int left = recurr(root->left);
+    if (left == -1) return -1;
+    int right = recurr(root->right);
+    if (right == -1) return -1;
+    return abs(left - right) < 2 ? max(left, right) + 1 : -1;
   }
- public:
-  bool isBalanced(TreeNode *root) {
-    if (root == nullptr) {
-      return true;
+  public:
+    bool isBalanced(TreeNode* root) {
+      return recurr(root) != -1;
     }
-    return abs(depth(root->left) - depth(root->right)) < 2 && 
-      isBalanced(root->left) && 
-      isBalanced(root->right);
-  }
 };
