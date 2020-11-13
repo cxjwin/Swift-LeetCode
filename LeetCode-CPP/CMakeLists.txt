@@ -13,7 +13,7 @@ add_subdirectory(206.reverse-linked-list)
 add_subdirectory(300.longest-increasing-subsequence)
 add_subdirectory(876.middle-of-the-linked-list)
 add_subdirectory(1143.longest-common-subsequence)
-
+add_subdirectory(local.test)
 add_subdirectory(offer.06)
 add_subdirectory(offer.07)
 add_subdirectory(offer.09)
